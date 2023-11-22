@@ -8,12 +8,11 @@ User
 
 /* Body Styling */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
 }
-
 /* Header Styling */
 header {
   background-color: #005f73;

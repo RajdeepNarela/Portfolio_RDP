@@ -5,6 +5,19 @@ User
   padding: 0;
   box-sizing: border-box;
 }
+/* main.css */
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+}
+
+section:not(.fade-in) {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
 
 /* Body Styling */
 body {
@@ -123,4 +136,10 @@ footer {
   main {
     padding: 10px;
   }
+}.even {
+  color: green;
+}
+
+.odd {
+  color: red;
 }

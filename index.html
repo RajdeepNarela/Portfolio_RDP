@@ -4,50 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet" />
+  <script src="scripts/script.js" defer></script>
   <title>Rajdeep Resume</title>
 </head>
 <body>
-
   <header>
-    <h1>Rajdeep Narela</h1>
+    <h1 id="headerTitle">Rajdeep Narela</h1>
     <nav>
       <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Hobby">Hobby</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#About" id="navAbout">About</a></li>
+        <li><a href="#Hobby" id="navHobby">Hobby</a></li>
+        <li><a href="#education" id="navEducation">Education</a></li>
+        <li><a href="#contact" id="navContact">Contact</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-
+    <button id="btn-alert">Click me for an alert</button>
+<button id="btn-hover">Default Button Label</button>
+<button id="btn-counter">Increment</button>
+<p id="txt-counter">Number: 1</p>
     <section id="About">
       <center><h2>About Me</h2></center>
-      <p>I'm Rajdeep Narela, a student at SAIT studying Interactive Design with a major in User Experience. My passion is merging technology with human psychology to solve IT challenges. I excel in creating user-friendly digital solutions by understanding user behavior and needs. I'm eager to contribute my skills to projects that prioritize exceptional user experiences.</p>
+      <p id="aboutText">I'm Rajdeep Narela, a student at SAIT studying Interactive Design with a major in User Experience.  ..</p>
       <figure><center>
         <img src="Working.jpg" width="350" height="200" alt="me working with laptop" /> 
         <figcaption><strong>This is me working on a project.</strong></figcaption></center>
       </figure>
     </section>
-
-    <section id="Hobby">
+   <section id="Hobby">
       <center><h2>Hobbies</h2></center>
-      <button id="btn-hover">Hover Button</button>
-      <button id="btn-counter">Increment Counter</button>
-      <p id="txt-counter">Number: 1</p>
-    
-      <p>Beyond my geeky tech side, you'll find me out and about with a camera in hand, chasing sunsets and hidden trails. Photography is my way of freezing moments in time and finding beauty in unexpected places. Hiking is my other love – it keeps me fit, clears my head, and lets me breathe in the great outdoors. These hobbies are my escape, my creative recharge, and my source of inspiration in the midst of the digital hustle.</p>
+      <p id="hobbyText">Beyond my geeky tech side, you'll find me out and about with a camera in hand, chasing sunsets and hidden trails...</p>
       <figure><center>
         <img src="Hobby.jpg" width="300" height="200" alt="Hobby">
         <figcaption><strong>One of my hobbies</strong></figcaption></center>
       </figure>
     </section>
-    
-    <section id="education">
+  <section id="education">
         <h2><center>Educational Background</h2></center>
       <table border="1">
         <tr>
@@ -55,31 +51,28 @@
           <th>Percentage</th>
         </tr>
         <tr>
-          <td>SSC</td>
-          <td>77%</td>
+          <td id="eduSSC">SSC</td>
+          <td id="eduSSCPercentage">77%</td>
         </tr>
         <tr>
-          <td>HSC</td>
-          <td>77%</td>
+          <td id="eduHSC">HSC</td>
+          <td id="eduHSCPercentage">77%</td>
         </tr>
         <tr>
-          <td>BCA</td>
-          <td>77%</td>
+          <td id="eduBCA">BCA</td>
+          <td id="eduBCAPercentage">77%</td>
         </tr>
       </table>
     </section>
-
-    <section id="contact">
+  <section id="contact">
       <center><h2>Contact Information</h2></center>
-      <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/rajdeep-narela/" target="_blank">LinkedIn</a> or follow me on <a href="https://github.com/RajdeepNarela" target="_blank">GitHub</a>.</p>
+      <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/rajdeep-narela/" target="_blank" id="linkedinLink">LinkedIn</a> or follow me on <a href="https://github.com/RajdeepNarela" target="_blank" id="githubLink">GitHub</a>.</p>
     </section>
 
   </main>
-
-  <footer>
-    <p>&copy; 2023 Rajdeep Narela. All rights reserved.</p>
-  </footer>
-  <script defer src="main.js"></script>
-
+<ol id="numbers"></ol>
+<footer id="footer">
+  <p>Your copyright information here.</p>
+</footer>
 </body>
 </html>
